@@ -1,0 +1,60 @@
+/*Feuille de style de la page du jeu*/
+
+body {
+    background-color: #E7D3B4;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#papier {
+    margin: 10px;
+}
+
+#caillou {
+    margin: 10px;
+}
+
+#ciseaux {
+    margin: 10px;
+}
+
+
+/*************************/
+
+.containerImg {
+    display: flex;
+}
+
+.userEmpl {
+    border: 2px black double;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+}
+
+
+/*Pied de page*/
+
+.page-footer {
+    border-top: black double 3px;
+    align-items: center;
+}
+
+
+/*Page des Régles et origines*/
+
+.jumbotron {
+    background-color: chocolate;
+}

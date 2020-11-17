@@ -1,0 +1,115 @@
+/*Feuille de style de la page du jeu*/
+
+body {
+    background-color: #E7D3B4;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+/*Ajout Font + Fond corps général des pages*/
+
+h1 {
+    font-family: "gangOfThree";
+    color: #2d5125;
+}
+
+.fond {
+    background-image: url('../../assets/img/backgroundPale.jpg');
+    width: 100%;
+}
+
+
+/*Zone des cartes de jeu*/
+
+#papier {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#caillou {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#ciseaux {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: "gangOfThree";
+    src: url("../../assets/font/go3v2.otf");
+}
+
+
+/* Zone de jeu*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-family: "gangOfThree";
+}
+
+.header a {
+    font-size: 200px;
+    text-decoration: none;
+    color: #43b02b;
+}
+
+.border {
+    border: solid 3px black;
+}
+
+#play {
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #43b02b;
+}
+
+#user {
+    fill: #2d5125;
+}
+
+.scoreBig {
+    font-family: "gangOfThree";
+    color: #2d5125;
+    font-size: 2em;
+}
+
+.scoreLess {
+    font-family: "gangOfThree";
+    color: #2d5125;
+    font-size: 1.2em;
+}
+
+
+/*pages régles & origine*/
+
+.jumbotron {
+    background-color: #2D5125;
+    color: white;
+}
+
+h2 {
+    font-family: "gangOfThree";
+    color: white;
+}
+
+h3 {
+    font-family: "gangOfThree";
+    color: white;
+}
+
+@font-face {
+    font-family: "gangOfThree";
+    src: url("../font/go3v2.otf");
+}

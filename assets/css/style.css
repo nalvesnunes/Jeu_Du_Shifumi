@@ -1,0 +1,16 @@
+/*CSS de la page d'accueil*/
+
+
+/*Couleur du fond de la page*/
+
+body {
+    background-color: black;
+}
+
+
+/*Image d'entête*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}

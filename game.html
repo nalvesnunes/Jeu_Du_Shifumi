@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jeu Shifumi</title>
+    <meta name="description" content="Jeu du Shifoumi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style_1.css">
+    <link rel="icon" href="assets/img/favicon.ico" />
+
+</head>
+
+<body>
+    <!--Bannière commune à chaque page-->
+    <div class="header">
+        <a href="index.html">SHIFUMI</a>
+    </div>
+
+    <!--div generale entre header et footer-->
+    <div class="container-fluid fond">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="text-center">Prêt pour une nouvelle partie ?</h1>
+            </div>
+        </div>
+
+        <!-- 1re ligne de carte : Cartes du jeu-->
+        <div class="row w-100 col-md-12">
+            <div class="col-md-2 offset-md-2 text-center">
+                <button id="papier" class="pcc"><img src="assets/img/feuille.png" class="w-50 m-3" alt="papier"/> </button>
+            </div>
+            <div class="col-md-2 offset-md-1 text-center">
+                <button id="caillou" class="pcc"><img src="assets/img/pierre.png" class="w-50 m-3" alt="caillou" /></button>
+            </div>
+            <div class="col-md-2 offset-md-1 text-center">
+
+                <button id="ciseaux" class="pcc"><img src="assets/img/ciseaux.png" class="w-50 m-3" alt="ciseaux"/></button>
+            </div>
+        </div>
+
+        <!-- 2e ligne icone joueur et ordi -->
+        <div class="row w-100 col-md-12 mt-5">
+            <div class="col-md-2 offset-md-2 text-center" id="user"><img src="assets/img/user-solid.png" class="ml-5 mr-5" height="70px"></div>
+            <div class="col-md-2 offset-md-4 text-center" id="laptop"><img src="assets/img/laptop-solid.png" class="ml-5 mr-5" height="70px"></div>
+        </div>
+
+
+        <!-- 3e ligne cartes à placer et bouton play -->
+        <div class="row w-100 col-md-12">
+            <div class="col-md-2 offset-md-2 text-center">
+                <button id="papier" class="pcc"><img src="assets/img/feuille.png" class="w-50 m-3" alt="papier"/> </button>
+            </div>
+            <div class="col-md-2 offset-md-1  text-center mt-5">
+                <button id="play" class="pcc rounded-circle ">PLAY</button>
+            </div>
+            <div class="col-md-2 offset-md-1 text-center">
+
+                <button id="ciseaux" class="pcc"><img src="assets/img/ciseaux.png" class="w-50 m-3" alt="ciseaux" /></button>
+            </div>
+        </div>
+
+
+        <!-- 4e ligne SCORE -->
+        <div class="row w-100 col-md-12 scoreBig text-center">
+            <div class="col-md-2 offset-md-2" id="scoreJoueur">
+                <p>score joueur 555</p>
+            </div>
+            <div class="col-md-2 offset-md-1">
+                <p class=>SCORE</p>
+            </div>
+            <div class="col-md-2 offset-md-1" id="scoreOrdi">
+                <p>SCORE AI <br>2221</p>
+            </div>
+        </div>
+
+        <!-- 5e ligne Taux de réussite -->
+        <div class="row w-100 col-md-12 text-center scoreLess">
+            <div class="col-md-2 offset-md-2" id="percentJoueur">
+                <p>pourcentage joueur <br>20</p>
+            </div>
+            <div class="col-md-2 offset-md-1">
+                <p>TAUX DE REUSSITE</p>
+            </div>
+            <div class="col-md-2 offset-md-1" id="percentOrdi">
+                <p>pourcentage ordi <br>80</p>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------Footer---------------------------------------------->
+    <footer class="page-footer font-small blue pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <!-- Grid row -->
+            <div class="row">
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <!--Lien page régle du jeu-->
+                    <ul class="list-unstyled text-center">
+                        <li>
+                            <a href="rules.html" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Les régles du jeu</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <!--Lien d'animation-->
+                    <ul class="list-unstyled text-center">
+                        <li>
+                            <img src="assets/img/pandadort.gif" alt="Gif panda qui dort">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <!--Lien page origine du jeu-->
+                    <ul class="list-unstyled text-center">
+                        <li>
+                            <a href="origin.html" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Les origines</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--Crédit bas de page-->
+            <div class="row">
+                <div class="col-md-12 text-center bg-light pt-1">
+                    <p>Crédit photos - La Manu 2020</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js " integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s " crossorigin="anonymous "></script>
+    <script type="text/javascript " src="assets/js/Main.js "></script>
+</body>
+
+</html>
